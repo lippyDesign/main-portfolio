@@ -1,0 +1,108 @@
+nav {
+    background-color: @dark-color;
+    display: flex;
+    justify-content: center;
+    align-items: cenetr;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+    .navigationListSmall {
+        display: none;
+    }
+
+    .navigationList {
+        @media(max-width: 760px) {
+            display: none;
+        }
+    }
+
+    .navigationListSmall {
+        @media(max-width: 760px) {
+            display: block;
+        }
+    }
+
+    .displayNone {
+        display: none;
+    }
+
+    ul {
+        @media(max-width: 760px) {
+            flex: 1;
+        }
+    }
+
+    .navigationButtonLi {
+        display: flex;
+        text-align: center;
+        width: 100%;
+
+        &:hover, &:active {
+            color: #fff;
+        }
+
+        @media(max-width: 760px) {
+            display: block;
+        }
+        strong {
+            color: darken(@light-gray-color, 10%);
+            display: inline-block;
+
+            a {
+                margin-top: 4px; 
+                margin-left: 20px;
+            }
+        }
+
+        button {
+            padding: 15px;
+            border: none;
+            background: @dark-color;
+            color: darken(@light-gray-color, 10%);
+            cursor: pointer;
+            float: right;
+
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+
+    ul li {
+        clear: both;
+        display: inline-block;
+        padding: 15px;
+        text-align: center;
+
+        .navigationLink, &:visited {
+            color: darken(@light-gray-color, 10%);
+            padding: 15px;
+            text-decoration: none;
+
+            &:hover {
+                color: #fff;
+            }
+
+            @media(max-width: 955px) {
+                padding: 15px 8px;
+            }
+            @media(max-width: 760px) {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        @media(max-width: 955px) {
+            padding: 15px 8px;
+        }
+        @media(max-width: 760px) {
+            display: block;
+            width: 100%;
+            padding: 0;
+            &:nth-child(even) {
+                background: lighten(@dark-color, 5%);
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.techSkills {
+
+    text-align: center;
+    padding: 75px;
+
+    h1 {
+        .set-font(36px, 300, @red-color);
+    }
+
+    p {
+        .set-font(14px, 400, #84868d);
+    }
+
+    .techSkillsCardsWrapper {
+        padding-top: 20px;
+        .standard-flex();
+        @media(max-width: 899px) {
+            justify-content: space-around;
+        }
+
+        a {
+            text-decoration: none;
+            border-radius: 4px;
+
+            &:hover {
+                background: darken(#fff, 5%);
+            } 
+
+            .techSkillsCard {
+                width: 350px;
+                padding: 5px;
+                margin: 5px;
+
+                @media(max-width: 1265px) {
+                    width: 300px;
+                }
+                @media(max-width: 1110px) {
+                    width: 270px;
+                }
+                @media(max-width: 1020px) {
+                    width: 230px;
+                }
+                @media(max-width: 650px) {
+                    width: 350px;
+                    padding-bottom: 30px;
+                }
+
+                img {
+                    width: 200px;
+                    border-radius: 4px;
+                }
+
+                h2 {
+                    .set-font(19px, 700, @dark-color);
+                }
+
+                p {
+                    .set-font(13px, 400, #84868d);
+                }
+            }
+        }
+    }
+}

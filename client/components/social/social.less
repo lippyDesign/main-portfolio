@@ -1,0 +1,18 @@
+.social {
+    background: @teal-color;
+    padding: 40px 10px;
+    .standard-flex();
+    flex-wrap: wrap;
+
+    li {
+        display: inline-block;
+        padding: 15px;
+        a {
+            color: darken(@very-light-gray-color, 5%);
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

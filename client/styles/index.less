@@ -1,0 +1,40 @@
+@dark-color: #262b37;
+@very-light-gray-color: #fafafa;
+@light-gray-color: #F3F3F3;
+@teal-color: #00bdbd;
+@dark-gray-blue: #474d5d;
+@gray-blue: #585f73;
+@red-color: #ff675f;
+@default-font-family: "Open Sans", sans-serif;
+@thin-font: 100;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: @default-font-family;
+    font-weight: @thin-font;
+}
+.textCenter {
+    text-align: center;
+}
+.activeWrapper {
+    color: @teal-color;
+    font-size: 9px;
+    position: relative;
+    top: -3px;
+}
+img {
+    width: 300px;
+}
+
+@import "./mixins";
+@import "../components/navigation/navigation";
+@import "../components/header/header";
+@import "../components/work/work";
+@import "../components/footer/footer";
+@import "../components/portfolio/portfolio";
+@import "../components/about/about";
+@import "../components/contact/contact";
+@import "../components/education/education";
+@import "../components/techSkills/techSkills";
+@import "../components/social/social";

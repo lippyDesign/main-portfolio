@@ -1,0 +1,101 @@
+.workExperience {
+    padding: 75px;
+
+    @media(max-width: 1000px) {
+        padding: 50px 15px 15px 15px;
+    }
+    h1 {
+        .set-font(36px, 300, @red-color);
+        text-align: center;
+    }
+
+    > p {
+        .set-font(14px, 400, #84868d);
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .workExperienceWrapper {
+
+        .workCardWrapper {
+            .standard-flex();
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+
+            .workDate {
+                background: @red-color;
+                width: 120px;
+                height: 120px;
+                display: inline-block;
+                border-radius: 50%;
+                position: relative;
+
+                @media(max-width: 870px) {
+                    margin-bottom: 20px;
+                }
+
+                .workDateInner {
+                    position: absolute;
+                    top: 39px;
+                    left: 20px;
+
+                    p {
+                        .set-font(17px, 100, #fff);
+                    }
+                }
+            }
+            .workContent {
+                display: inline-block;
+                background: @light-gray-color;
+                padding: 10px;
+                width: 80%;
+                margin-left: 25px;
+                border-radius: 4px;
+                position: relative;
+
+                // @media(max-width: 990px) {
+                //     width: 70%;
+                // }
+                @media(max-width: 870px) {
+                    width: 90%;
+                    margin: 10px auto;
+                    margin-bottom: 20px;
+                }
+                .fa-angle-left {
+                    position: absolute;
+                    left: -15px;
+                    top: 30px;
+                    color: @light-gray-color;
+
+                    @media(max-width: 1418px) {
+                        top: 38px;
+                    }
+                    @media(max-width: 1016px) {
+                        top: 48px;
+                    }
+                    @media(max-width: 870px) {
+                        display: none;
+                    }
+                }
+                .upArrowWrapper {
+                    margin-top: -42px;
+                    text-align: center;
+                    color: @light-gray-color;
+
+                    @media(min-width: 870px) {
+                        display: none;
+                    }
+                }
+                h2 {
+                    .set-font(19px, 700, @dark-color)
+                }
+                h3 {
+                    .set-font(16px, 700, @dark-color)
+                }
+                p {
+                    padding-top: 15px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

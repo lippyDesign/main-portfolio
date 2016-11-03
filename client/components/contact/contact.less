@@ -1,0 +1,108 @@
+.contact {
+    padding: 75px;
+    background: @dark-gray-blue;
+    color: @light-gray-color;
+
+    @media(max-width: 1080px) {
+        padding: 75px 15px;
+    }
+
+    h1 {
+        .set-font(36px, 100, darken(@very-light-gray-color, 5%));
+        text-align: center;
+    }
+    > p {
+        .set-font(15px, 300, darken(@very-light-gray-color, 5%));
+        text-align: center;
+        margin-bottom: 75px;
+
+        @media(max-width: 856px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    > div {
+        .standard-flex();
+        flex-wrap: wrap;
+
+        aside {
+            color: darken(@very-light-gray-color, 10%);
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+
+            @media(max-width: 1000px) {
+                width: 25%;
+            }
+            @media(max-width: 856px) {
+                display: block;
+                width: 100%;
+            }
+
+            p {
+                margin: 10px;
+
+                a {
+                    color: darken(@very-light-gray-color, 10%);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        form {
+            display: inline-block;
+            width: 60%;
+            .standard-flex();
+            flex-wrap: wrap;
+
+            @media(max-width: 1000px) {
+                width: 70%;
+            }
+            @media(max-width: 856px) {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            input, textarea {
+                background: @gray-blue;
+                color: @light-gray-color;
+                padding: 15px 30px;
+                border: none;
+                margin-right: 3%;
+                margin-bottom: 30px;
+                outline: none;
+                font-style: italic;
+                font-size: 14px;
+                width: 35%;
+                height: 30px;
+                border-radius: 4px;
+                text-align: left;
+
+                @media(max-width: 856px) {
+                    display: block;
+                    width: 82%;
+                    margin: 15px auto;
+                }
+            }
+
+            textarea {
+                display: block;
+                width: 82%;
+                height: 100px;
+            }
+
+            button {
+                background: @red-color;
+                color: #fff;
+                font-size: 16px;
+                text-align: center;
+                margin: 0px;
+                padding: 15px 25px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+    }
+}

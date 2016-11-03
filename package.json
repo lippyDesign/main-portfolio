@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "styles": "lessc --source-map-map-inline client/styles/index.less client/styles/main.css"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.3.2",
+    "react-addons-pure-render-mixin": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "less": "^2.7.1"
+  }
+}

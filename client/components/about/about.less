@@ -1,0 +1,82 @@
+.about {
+    background: @teal-color;
+    color: @very-light-gray-color;
+    height: 600px;
+
+    @media(max-width: 976px) {
+        height: 700px;
+    }
+    @media(max-width: 760px) {
+        height: 850px;
+        text-align: center;
+    }
+    @media(max-width: 475px) {
+        height: 900px;
+    }
+
+    h1 {
+        font-size: 36px;
+        text-align: center;
+        padding-top: 75px;
+    }
+    @media(max-width: 760px) {
+            padding-top: 25px;
+        }
+    div {
+        padding: 50px 75px 50px 75px;
+
+        @media(max-width: 900px) {
+            padding: 50px;
+        }
+        @media(max-width: 760px) {
+            padding: 50px 15px;
+        }
+
+        h2 {
+            padding-top: 20px;
+            font-size: 24px;
+            padding-bottom: 5px;
+            font-weight: 400;
+        }
+        h3 {
+            padding-bottom: 20px;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+        }
+    }
+    img {
+        float: right;
+        border-radius: 50%;
+        margin-left: 25px;
+        @media(max-width: 760px) {
+            float: none;
+            margin: 0 auto;
+        }
+    }
+    .bntDownload {
+        font-size: 16px;
+        font-weight: 700;
+        background: @dark-color;
+        padding: 16px 22px;
+        color: @very-light-gray-color;
+        text-decoration: none;
+        margin-left: 75px;
+        border-radius: 4px;
+
+        &:hover {
+            background: lighten(@dark-color, 5%);
+        }
+
+        @media(max-width: 900px) {
+            margin-left: 50px;
+        }
+        @media(max-width: 760px) {
+            margin: 10px 0;
+        }
+    }
+}

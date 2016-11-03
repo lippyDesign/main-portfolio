@@ -1,0 +1,117 @@
+.education {
+    padding: 75px;
+    background: @light-gray-color;
+
+    @media(max-width: 1000px) {
+        padding: 50px 15px 15px 15px;
+    }
+    h1 {
+        .set-font(36px, 300, @red-color);
+        text-align: center;
+    }
+
+    .coursesHeader {
+        padding-top: 45px;
+    }
+
+    > p {
+        .set-font(14px, 400, @dark-color);
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .educationWrapper {
+
+        .workCardWrapper {
+            .standard-flex();
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+
+            .workDate {
+                background: @red-color;
+                width: 120px;
+                height: 120px;
+                display: inline-block;
+                border-radius: 50%;
+                position: relative;
+
+                @media(max-width: 870px) {
+                    margin-bottom: 15px;
+                }
+
+                .workDateInner {
+                    position: absolute;
+                    top: 49px;
+                    left: 23px;
+
+                    p {
+                        .set-font(17px, 100, #fff);
+                    }
+                }
+            }
+
+            #workDateItem {
+                width: 90px;
+                height: 90px;
+
+                #workInnerItem {
+                    top: 35px;
+                    left: 27px;
+                }
+            }
+            .workContent {
+                display: inline-block;
+                background: #fff;
+                padding: 10px;
+                width: 80%;
+                margin-left: 25px;
+                border-radius: 4px;
+                position: relative;
+
+                @media(max-width: 977px) {
+                    width: 70%;
+                }
+                @media(max-width: 870px) {
+                    width: 90%;
+                    margin: 10px auto;
+                }
+                .fa-angle-left {
+                    position: absolute;
+                    left: -15px;
+                    top: 20px;
+                    color: #fff;
+
+                    @media(max-width: 870px) {
+                        display: none;
+                    }
+                }
+                #courseLeftArrow {
+                    top: 5px;
+                    left: -15px;
+                }
+                .upArrowWrapper {
+                    margin-top: -42px;
+                    text-align: center;
+                    color: #fff;
+
+                    @media(min-width: 870px) {
+                        display: none;
+                    }
+                }
+                h2 {
+                    .set-font(19px, 700, @dark-color)
+                }
+                h3 {
+                    .set-font(16px, 700, @dark-color)
+                }
+                .courseHeaderThree {
+                    font-weight: 400;
+                }
+                p {
+                    padding-top: 15px;
+                    font-weight: 400;
+                    color: #84868d;
+                }
+            }
+        }
+    }
+}
