@@ -104,9 +104,10 @@ class App extends Component {
         return <div>
             <Navigation
                 toggleNav={this.toggleNav.bind(this)}
+                navButtonClicked={this.navButtonClicked.bind(this)}
+                arrOfElements={this.state.arrOfElements}
                 navOpen={this.state.navOpen}
                 navButton={this.state.navButton}
-                navButtonClicked={this.navButtonClicked.bind(this)}
                 activeItem={activeItem.elementId}
             />
             <Header name={about.name.toUpperCase()} slogan={about.slogan} />

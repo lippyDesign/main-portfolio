@@ -4,29 +4,49 @@ import { browserHistory, Link } from 'react-router';
 export default (props) => {
     const navVisibleOrNot = props.navOpen ? '' : 'displayNone';
 
-    let activeItem = props.activeItem;
-    if (activeItem === 'renderTarget') {
-        activeItem = 'home';
+    // this function creates menu items for the large Menu
+    const getMenuItems = array => {
+        return array.map(current => {
+            // if not active item
+            if (current !== props.activeItem) {
+                return <li key={current}>
+                    <a className="navigationLink" href={`#${current}`}>
+                        {current === 'renderTarget' ? 'HOME' : current.toUpperCase()}
+                    </a>
+                </li>;
+            }
+            // if active item
+            return <li key={current}>
+                <a className="navigationLink" href={`#${current}`}>
+                    <span className="activeWrapper"><i className="fa fa-circle" aria-hidden="true"></i></span> {current === 'renderTarget' ? 'HOME' : current.toUpperCase()}
+                </a>
+            </li>;
+        });
     }
-    // var x = document.getElementsByClassName('navigationLink');
-    // const arr = [...x]
-    // arr.forEach(item => {
-    //     if (item.innerText.toLowerCase() === activeItem) {
-    //         //console.log(item)
-    //         var z = item.parentNode;
-    //         z.innerHTML = `<li><a className="navigationLink" href="#${activeItem}"><span className="activeWrapper"><i className="fa fa-circle" aria-hidden="true"></i></span> ${activeItem.toUpperCase()}</a></li>`
-    //     }
-    // });
+
+    // this function creates menu items for the small Menu
+    const getSmallMenuItems = array => {
+        return array.map(current => {
+            // if not active item
+            if (current !== props.activeItem) {
+                return <li key={current} className={navVisibleOrNot}>
+                    <a className="navigationLink" href={`#${current}`} onClick={props.navButtonClicked}>
+                        {current === 'renderTarget' ? 'HOME' : current.toUpperCase()}
+                    </a>
+                </li>;
+            }
+            // if active item
+            return <li key={`smallMenu${current}`} className={navVisibleOrNot}>
+                <a className="navigationLink" href={`#${current}`} onClick={props.navButtonClicked}>
+                    <span className="activeWrapper"><i className="fa fa-circle" aria-hidden="true"></i></span> {current === 'renderTarget' ? 'HOME' : current.toUpperCase()} <span className="activeWrapper"><i className="fa fa-circle" aria-hidden="true"></i></span> 
+                </a>
+            </li>;
+        });
+    }
 
     return <nav id="fixedNavi">
         <ul className="navigationList">
-            <li><a className="navigationLink" href="#renderTarget">HOME</a></li>
-            <li><a className="navigationLink" href="#about">ABOUT</a></li>
-            <li><a className="navigationLink" href="#skills">SKILLS</a></li>
-            <li><a className="navigationLink" href="#portfolio">PORTFOLIO</a></li>
-            <li><a className="navigationLink" href="#experience">EXPERIENCE</a></li>
-            <li><a className="navigationLink" href="#education">EDUCATION</a></li>
-            <li><a className="navigationLink" href="#contact">CONTACT</a></li>
+            {getMenuItems(props.arrOfElements)}
         </ul>
         <ul className="navigationListSmall">
             <li className="navigationButtonLi">
@@ -37,27 +57,7 @@ export default (props) => {
                     <i className={props.navButton}></i>
                 </button>
             </li>
-            <li className={navVisibleOrNot}>
-                <a className="navigationLink" href="#renderTarget" onClick={props.navButtonClicked}>HOME</a>
-            </li>
-            <li className={navVisibleOrNot}>
-                <a className="navigationLink" href="#about" onClick={props.navButtonClicked}><span className="activeWrapper"><i className="fa fa-circle" aria-hidden="true"></i></span> ABOUT <span className="activeWrapper"><i className="fa fa-circle" aria-hidden="true"></i></span></a>
-            </li>
-            <li className={navVisibleOrNot}>
-                <a className="navigationLink" href="#skills" onClick={props.navButtonClicked}>SKILLS</a>
-            </li>
-            <li className={navVisibleOrNot}>
-                <a className="navigationLink" href="#portfolio" onClick={props.navButtonClicked}>PORTFOLIO</a>
-            </li>
-            <li className={navVisibleOrNot}>
-                <a className="navigationLink" href="#experience" onClick={props.navButtonClicked}>EXPERIENCE</a>
-            </li>
-            <li className={navVisibleOrNot}>
-                <a className="navigationLink" href="#education" onClick={props.navButtonClicked}>EDUCATION</a>
-            </li>
-            <li className={navVisibleOrNot}>
-                <a className="navigationLink" href="#contact" onClick={props.navButtonClicked}>CONTACT</a>
-            </li>
+            {getSmallMenuItems(props.arrOfElements)}
         </ul>
     </nav>;
 };
