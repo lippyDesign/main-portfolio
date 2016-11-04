@@ -246,7 +246,7 @@ export const social = [
 ];
 export const about = {
     name: 'Vladimir Lipunov',
-    slogan: 'Design & Build Beautiful Crafted Web Experiences',
+    slogan: 'Design & Build Beautiful Web Experiences',
     statement: 'Web Designer & Web Developer from Santa Clara, CA',
-    details: 'I am a law enforcement officer with an impressive history of dedication and leadership with a passion for technology and programming languages. I am able to work in stressful situations with meticulous attention to detail. I interact effectively with citizens of diverse cultural background and social levels.  I’m looking to start a new and challenging career in high tech industry utilizing my programming skills.'
+    details: 'I am a UX/UI Designer and Front End Web Developer from Santa Clara, CA. I enjoy solving complex problems and challenges, as well as, creating beautiful and intuitive interfaces. I have an impressive history of dedication and leadership with a passion for technology and programming languages. I am able to work in stressful situations with meticulous attention to detail. I interact effectively with citizens of diverse cultural background and social levels.  I’m looking to start a new and challenging career in high tech industry utilizing my programming skills.'
 };
