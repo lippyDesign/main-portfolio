@@ -181,7 +181,7 @@ export const projects = [
     },
     {
         id: 'p4',
-        technology: ['JavaScript ES2015', 'jQuery'],
+        technology: ['React JS', 'Redux'],
         url: 'http://money-exchange.herokuapp.com/',
         img: './images/currency-exchange.png',
         title: 'Currency Exchange',
