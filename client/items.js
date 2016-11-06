@@ -182,10 +182,10 @@ export const projects = [
     {
         id: 'p4',
         technology: ['JavaScript ES2015', 'jQuery'],
-        url: 'projects/foreign-exchange-rates/index.html',
+        url: 'http://money-exchange.herokuapp.com/',
         img: './images/currency-exchange.png',
         title: 'Currency Exchange',
-        description: 'Basic application that makes an API request to get the current currency exchange rates. The app then builds a list of available rates.'
+        description: 'An app makes API requests to get the current currency exchange rates. The app then builds an interactive list of available rates with graphs.'
     },
     {
         id: 'p5',
