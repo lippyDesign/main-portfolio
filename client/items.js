@@ -164,6 +164,14 @@ export const projects = [
         description: 'Social study platform. After registering, users can take practice tests in all 4 CPA sections, track their progress, add thier own questions and much more.'
     },
     {
+        id: 'p4',
+        technology: ['React JS', 'Redux'],
+        url: 'http://money-exchange.herokuapp.com/',
+        img: './images/currency-exchange.png',
+        title: 'Currency Exchange',
+        description: 'An app makes API requests to get the current currency exchange rates. The app then builds an interactive list of available rates with graphs.'
+    },
+    {
         id: 'p2',
         technology: ['Meteor JS', 'React JS', 'Mongo DB'],
         url: 'http://battleship-game.meteorapp.com/',
@@ -174,23 +182,15 @@ export const projects = [
     {
         id: 'p3',
         technology: ['JavaScript ES2015', 'jQuery'],
-        url: 'projects/restaurant-menu/index.html',
+        url: 'http://codebyvolo.com/projects/restaurant-menu/index.html',
         img: './images/restaurant.png',
         title: 'Restaurant Menu',
         description: 'Basic ordering and payment system. A user can add items to cart, update cart and check out items.'
     },
     {
-        id: 'p4',
-        technology: ['React JS', 'Redux'],
-        url: 'http://money-exchange.herokuapp.com/',
-        img: './images/currency-exchange.png',
-        title: 'Currency Exchange',
-        description: 'An app makes API requests to get the current currency exchange rates. The app then builds an interactive list of available rates with graphs.'
-    },
-    {
         id: 'p5',
         technology: ['JavaScript ES2015', 'jQuery'],
-        url: 'projects/calculator-jquery/index.html',
+        url: 'http://codebyvolo.com/projects/calculator-jquery/index.html',
         img: './images/calculator.png',
         title: 'Calculator',
         description: 'Simple calculator that can evaluate basic mathematic expressions.'
@@ -203,22 +203,22 @@ export const projects = [
         title: 'Todos Organizer',
         description: 'Cool todos aorganizer. After registering a user can add tasks, select who can view the tasks, delete tasks and complete tasks.'
     },
-    {
-        id: 'p7',
-        technology: ['JavaScript ES2015', 'jQuery'],
-        url: 'projects/planet-quiz/index.html',
-        img: './images/planet-quiz.png',
-        title: 'Astronomy Quiz',
-        description: 'Simple astronomy quiz. The quiz randomizes the question and answer choice order; it also keeps track of the user\'s score. It has 8 multiple choice and 8 short answer questions.'
-    },
-    {
-        id: 'p8',
-        technology: ['React JS', 'Redux'],
-        url: 'https://react-input-with-typeahead.herokuapp.com/',
-        img: './images/search-bar.png',
-        title: 'React Search Input',
-        description: 'Basic search input with typeahead options. Once a user begins to type, if a word or expression containes the text, a drop down menu will appear with available options.'
-    },
+    // {
+    //     id: 'p7',
+    //     technology: ['JavaScript ES2015', 'jQuery'],
+    //     url: '../../planet-quiz/quizIndex.html',
+    //     img: './images/planet-quiz.png',
+    //     title: 'Astronomy Quiz',
+    //     description: 'Simple astronomy quiz. The quiz randomizes the question and answer choice order; it also keeps track of the user\'s score. It has 8 multiple choice and 8 short answer questions.'
+    // },
+    // {
+    //     id: 'p8',
+    //     technology: ['React JS', 'Redux'],
+    //     url: 'https://react-input-with-typeahead.herokuapp.com/',
+    //     img: './images/search-bar.png',
+    //     title: 'React Search Input',
+    //     description: 'Basic search input with typeahead options. Once a user begins to type, if a word or expression containes the text, a drop down menu will appear with available options.'
+    // },
 ]
 export const contactInfo = {
     name: 'Vladimir Lipunov',

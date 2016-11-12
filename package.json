@@ -6,6 +6,7 @@
     "styles": "lessc --source-map-map-inline client/styles/index.less client/styles/main.css"
   },
   "dependencies": {
+    "babel-runtime": "^6.18.0",
     "meteor-node-stubs": "~0.2.0",
     "react": "^15.3.2",
     "react-addons-pure-render-mixin": "^15.3.2",
