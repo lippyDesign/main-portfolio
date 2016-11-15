@@ -203,14 +203,14 @@ export const projects = [
         title: 'Todos Organizer',
         description: 'Cool todos aorganizer. After registering a user can add tasks, select who can view the tasks, delete tasks and complete tasks.'
     },
-    // {
-    //     id: 'p7',
-    //     technology: ['JavaScript ES2015', 'jQuery'],
-    //     url: '../../planet-quiz/quizIndex.html',
-    //     img: './images/planet-quiz.png',
-    //     title: 'Astronomy Quiz',
-    //     description: 'Simple astronomy quiz. The quiz randomizes the question and answer choice order; it also keeps track of the user\'s score. It has 8 multiple choice and 8 short answer questions.'
-    // },
+    {
+        id: 'p7',
+        technology: ['JavaScript ES2015', 'React'],
+        url: 'https://aqueous-waters-77895.herokuapp.com',
+        img: './images/clock.png',
+        title: 'Clock, Stopwatch',
+        description: 'A cool clock that displays time and date in analog and digital formats. The user can choose between standard time, military time or stopwatch.'
+    },
     // {
     //     id: 'p8',
     //     technology: ['React JS', 'Redux'],
