@@ -208,23 +208,23 @@ export const projects = [
         technology: ['JavaScript ES2015', 'React'],
         url: 'https://aqueous-waters-77895.herokuapp.com',
         img: './images/clock.png',
-        title: 'Clock, Stopwatch',
+        title: 'Clock',
         description: 'A cool clock that displays time and date in analog and digital formats. The user can choose between standard time, military time or stopwatch.'
     },
-    // {
-    //     id: 'p8',
-    //     technology: ['React JS', 'Redux'],
-    //     url: 'https://react-input-with-typeahead.herokuapp.com/',
-    //     img: './images/search-bar.png',
-    //     title: 'React Search Input',
-    //     description: 'Basic search input with typeahead options. Once a user begins to type, if a word or expression containes the text, a drop down menu will appear with available options.'
-    // },
+    {
+        id: 'p8',
+        technology: ['React JS', 'Redux', 'Node'],
+        url: 'https://cool-api-app.herokuapp.com/',
+        img: './images/cool-api-app.png',
+        title: 'Social Media Accelerator',
+        description: 'An application that fetches current most popular posts from various social media sites and puts them together on one screen.'
+    }
 ]
 export const contactInfo = {
     name: 'Vladimir Lipunov',
     city: 'Santa Clara',
     phone: 4086030004,
-    email: 'volo_lipu@yahoo.com'
+    email: 'vololipu@gmail.com'
 };
 export const social = [
     {
