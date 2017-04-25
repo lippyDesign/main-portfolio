@@ -99,6 +99,21 @@ export const education = [
 ];
 export const courses = [
     {
+        name: "Data Structures in JavaScript",
+        platform: 'Udemy',
+        year: '2017'
+    },
+    {
+        name: "Webpack 2: The Complete Developer's Guide",
+        platform: 'Udemy',
+        year: '2017'
+    },
+    {
+        name: "The Complete Developers Guide to Mongo DB",
+        platform: 'Udemy',
+        year: '2016'
+    },
+    {
         name: "Using Modern JavaScript Today",
         platform: 'Udemy',
         year: '2016'

@@ -11,6 +11,6 @@ export default (props) => {
             <h3>{statement}</h3>
             <p>{details}</p>
         </div>
-        <a className="bntDownload button" download="" href="../../../resume.docx" hidden="">Download Printable Resume</a>
+        <a className="bntDownload button" download="" href="../../../resume.pdf" hidden="">Download Printable Resume</a>
     </section>
 }
