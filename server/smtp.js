@@ -3,7 +3,7 @@ import { Email } from 'meteor/email'
 import { check } from 'meteor/check';
 
 Meteor.startup(function () {
-  process.env.MAIL_URL = 'smtp://number1ice:number1fan@smtp.sendgrid.net:587';
+  process.env.MAIL_URL = '';
 });
 
 Meteor.methods({
